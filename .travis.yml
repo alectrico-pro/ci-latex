@@ -1,0 +1,6 @@
+language: generic
+script:
+# Trigger build from https://hub.docker.com/r/niccokunzmann/ci-latex/~/settings/automated-builds/
+- curl -H "Content-Type: application/json" --data '{"build": true}' -X POST "$TRIGGER_URL"
+
+
